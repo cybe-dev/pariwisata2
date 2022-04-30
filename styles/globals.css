@@ -1,16 +1,30 @@
-html,
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Noto Sans", sans-serif;
+  @apply text-gray-700;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.concert {
+  font-family: "Concert One", cursive;
 }
 
-* {
-  box-sizing: border-box;
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+@layer utilities {
+  .w-640 {
+    width: 800px;
+  }
+
+  .w-1024 {
+    width: 1150px;
+  }
+
+  .w-1280 {
+    width: 1300px;
+  }
 }
